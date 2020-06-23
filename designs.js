@@ -22,12 +22,12 @@ function makeGrid(height, width) {
     for (let x = 0; x < height; x++) {
         let row = table.insertRow(x);
         
-    for (let y = 0; y < width; y++) { 
-        let cell = row.insertCell(y);
-        // add cell colour
-        cell.addEventListener('click', (event) => {
-            cell.style.backgroundColor = colorPicker.value;
-        });
-    }
-}
+        for (let y = 0; y < width; y++) { 
+            let cell = row.insertCell(y);
+         // add cell colour
+            cell.addEventListener('click', (event) => {
+                cell.style.backgroundColor = colorPicker.value;
+             });
+            }
+        }
 }
